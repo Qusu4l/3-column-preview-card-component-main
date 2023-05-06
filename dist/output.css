@@ -570,10 +570,6 @@ video {
   height: 48px;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .w-\[146px\]{
   width: 146px;
 }
@@ -602,16 +598,8 @@ video {
   flex-direction: column;
 }
 
-.flex-nowrap{
-  flex-wrap: nowrap;
-}
-
 .items-center{
   align-items: center;
-}
-
-.justify-center{
-  justify-content: center;
 }
 
 .rounded-\[30px\]{
@@ -626,6 +614,16 @@ video {
 .rounded-t-\[12px\]{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+
+.rounded-t-\[10px\]{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rounded-b-\[10px\]{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .bg-\[\#004140\]{
@@ -728,44 +726,46 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
+  .sm\:mt-\[\]{
+    margin-top: ;
+  }
+
+  .sm\:mt-\[83px\]{
+    margin-top: 83px;
+  }
+
+  .sm\:h-\[500px\]{
+    height: 500px;
   }
 
   .sm\:h-screen{
     height: 100vh;
   }
 
+  .sm\:w-\[307px\]{
+    width: 307px;
+  }
+
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .sm\:flex-row{
-    flex-direction: row;
-  }
-
-  .sm\:place-content-center{
-    place-content: center;
-  }
-
-  .sm\:place-items-center{
-    place-items: center;
-  }
-
-  .sm\:content-center{
-    align-content: center;
-  }
-
-  .sm\:items-center{
-    align-items: center;
   }
 
   .sm\:justify-center{
     justify-content: center;
   }
 
-  .sm\:justify-items-center{
-    justify-items: center;
+  .sm\:rounded{
+    border-radius: 0.25rem;
+  }
+
+  .sm\:rounded-t{
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .sm\:rounded-t-none{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 
   .sm\:rounded-b-none{
@@ -773,8 +773,35 @@ video {
     border-bottom-left-radius: 0px;
   }
 
-  .sm\:rounded-t-none{
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+  .sm\:rounded-tr-\[12px\]{
+    border-top-right-radius: 12px;
+  }
+
+  .sm\:rounded-tl-\[12px\]{
+    border-top-left-radius: 12px;
+  }
+
+  .sm\:rounded-bl-\[12px\]{
+    border-bottom-left-radius: 12px;
+  }
+
+  .sm\:rounded-br-\[12px\]{
+    border-bottom-right-radius: 12px;
+  }
+
+  .sm\:rounded-br-\[10px\]{
+    border-bottom-right-radius: 10px;
+  }
+
+  .sm\:rounded-tr-\[10px\]{
+    border-top-right-radius: 10px;
+  }
+
+  .sm\:rounded-tl-\[10px\]{
+    border-top-left-radius: 10px;
+  }
+
+  .sm\:rounded-bl-\[10px\]{
+    border-bottom-left-radius: 10px;
   }
 }
