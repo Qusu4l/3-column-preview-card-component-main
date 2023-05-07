@@ -606,24 +606,14 @@ video {
   border-radius: 30px;
 }
 
-.rounded-b-\[12px\]{
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-
-.rounded-t-\[12px\]{
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+.rounded-b-\[10px\]{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .rounded-t-\[10px\]{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-.rounded-b-\[10px\]{
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
 .bg-\[\#004140\]{
@@ -649,6 +639,10 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.font-BigShouldersDisplay{
+  font-family: Big Shoulders Display;
 }
 
 .font-LexandDeca{
@@ -726,10 +720,6 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:mt-\[\]{
-    margin-top: ;
-  }
-
   .sm\:mt-\[83px\]{
     margin-top: 83px;
   }
@@ -754,13 +744,9 @@ video {
     justify-content: center;
   }
 
-  .sm\:rounded{
-    border-radius: 0.25rem;
-  }
-
-  .sm\:rounded-t{
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+  .sm\:rounded-b-none{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 
   .sm\:rounded-t-none{
@@ -768,40 +754,19 @@ video {
     border-top-right-radius: 0px;
   }
 
-  .sm\:rounded-b-none{
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-
-  .sm\:rounded-tr-\[12px\]{
-    border-top-right-radius: 12px;
-  }
-
-  .sm\:rounded-tl-\[12px\]{
-    border-top-left-radius: 12px;
-  }
-
-  .sm\:rounded-bl-\[12px\]{
-    border-bottom-left-radius: 12px;
-  }
-
-  .sm\:rounded-br-\[12px\]{
-    border-bottom-right-radius: 12px;
+  .sm\:rounded-bl-\[10px\]{
+    border-bottom-left-radius: 10px;
   }
 
   .sm\:rounded-br-\[10px\]{
     border-bottom-right-radius: 10px;
   }
 
-  .sm\:rounded-tr-\[10px\]{
-    border-top-right-radius: 10px;
-  }
-
   .sm\:rounded-tl-\[10px\]{
     border-top-left-radius: 10px;
   }
 
-  .sm\:rounded-bl-\[10px\]{
-    border-bottom-left-radius: 10px;
+  .sm\:rounded-tr-\[10px\]{
+    border-top-right-radius: 10px;
   }
 }
